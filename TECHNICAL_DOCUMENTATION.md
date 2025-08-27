@@ -304,10 +304,10 @@ def read_sensors(self):
 #include <Servo.h>
 
 // 4 servo motors for corner control
-Servo servoFront;  // Pin 9  - Front edge height
-Servo servoRight;  // Pin 10 - Right edge height  
-Servo servoBack;   // Pin 11 - Back edge height
-Servo servoLeft;   // Pin 12 - Left edge height
+Servo servoFront;  // Pin 6  - Front edge height
+Servo servoRight;  // Pin 9 - Right edge height  
+Servo servoBack;   // Pin 10 - Back edge height
+Servo servoLeft;   // Pin 11 - Left edge height
 
 // LDR sensors for light detection
 const int ldrPinFront = A0;  // Front light sensor
@@ -794,7 +794,7 @@ python3 pergola_server_complete.py
 **2. Arduino Setup:**
 ```cpp
 // Upload arduino_pergola_maquette.ino
-// Connect servos to pins 9, 10, 11, 12 (from North (front) and clockwise)
+// Connect servos to pins 6, 9, 10, 11 (from North (front) and clockwise)
 // Connect LDRs to analog pins A0, A1, A2, A3 (from North (front) and clockwise)
 // Connect Arduino to Pi via USB
 ```
@@ -1084,5 +1084,6 @@ The system demonstrates practical engineering solutions to real-world challenges
 **Academic Value**: Multiple engineering disciplines represented in single cohesive project
 
 ---
+
 
 *This documentation serves as both a technical reference for continued development and a comprehensive project overview for academic presentation and evaluation.*
